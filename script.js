@@ -46,7 +46,7 @@ function calcTotalItems() {
   for (let i = 0; i < iceCream.length; i++) {
 
     let item = iceCream[i]
-    totalItems = item.quantity
+    totalItems += item.quantity
   }
 
   return totalItems
@@ -81,13 +81,13 @@ function drawTotal() {
 
 }
 
-// function drawItemTotal() {
-//   let itemTotal = calcTotalItems()
-//   let totalItemElm = document.getElementById(`total-items`)
-//   totalItemElm.innerText = itemTotal.toFixed(2)
+function drawItemTotal() {
+  let itemTotal = calcTotalItems()
+  let totalItemElm = document.getElementById(`total-items`)
+  totalItemElm.innerText = itemTotal.toFixed(2)
 
 
-// }
+}
 
 
 
